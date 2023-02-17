@@ -1,0 +1,17 @@
+<html>
+<header><title>Loading</title></header>
+<head>
+  <script>
+    function navigate() {
+        window.location.href = 'cat_subcat_list';  // Redirects user to the /map route when 'create_map' is finished
+    }
+    fetch('load_data').then(navigate); // Performing 'create_map' and then calls navigate() function, declared above
+  </script>
+</head>
+
+<body>
+    <div class="loader"></div>
+    <h3>Loading Data...Please wait</h3>
+</body>
+
+</html>
